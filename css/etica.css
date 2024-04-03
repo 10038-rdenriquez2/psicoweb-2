@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+header {
+    position: relative;
+    height: 100vh;
+}
+
+header .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/etica1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+header h1{
+	font-family: "Bebas Neue", sans-serif;
+  	font-weight: 500;
+  	font-style: normal;
+  	font-size: 150px;
+   	letter-spacing: 1px;
+   	color: #fff;
+   	text-shadow: #FF94C0 10px 0 20px;
+   	text-align: center;
+}
+
+header .titulo{
+   	padding-top: 100px;
+}
+
+header h4{
+	color: #fff;
+	text-align: center;
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+@media screen and (max-width: 650px){
+	header h1{
+  		font-size: 100px;
+	}
+}
+
+
+/*PRINCIPIOS ÉTICOS*/
+
+section{
+	padding-top: 5rem;
+	background-color: #000;
+	color: #fff;
+}
+
+section .titulo-1{
+	font-family: "Bungee Shade", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: #FF94C0;
+  	text-align: center;
+  	font-size: 70px;
+}
+
+section .principios p{
+	text-align: center;
+}
+
+section .definicion{
+	max-width: 50rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 650px){
+	section .titulo-1{
+  		font-size: 50px;
+	}
+}
+
+section .principios-list{
+	max-width: 30rem;
+	text-align: center;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+section .principios .prin-iconos{
+	font-size: 80px;
+	color: #FF94C0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+
+/*PRUEBAS PSICOLÓGICAS*/
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+section .pruebas-psicologicas .container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+@media screen and (max-width: 800px){
+	section .pruebas-psicologicas .container{
+  		justify-content: center;
+	}
+}
+
+section .pruebas-psicologicas .avatar {
+	width: 250px;
+	height: 250px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+
+section .pruebas-psicologicas .dialogo {
+	position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: solid #FF94C0 3px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    color: #000;
+}
+
+@media screen and (max-width: 800px){
+	section .pruebas-psicologicas .dialogo{
+  		justify-content: center;
+  		align-items: center;
+  		margin: 0 auto;
+	}
+}
+
+section .pruebas-psicologicas .dialogo::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #FF94C0 transparent transparent transparent;
+}
+
+
+/*CONSENTIMIENTO INFORMADO*/
+
+section .consentimiento .preguntas{
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+section .consentimiento button{
+	color: #FF94C0;
+	border: solid #FFF 5px;
+	font-size: 25px;
+	padding: 3px;
+}
+
+section .consentimiento button:hover{
+	background-color: #FF94C0;
+	color: #FFF;
+	transition: 0.4s;
+	border-color: #FFF;
+}
+
+section .consentimiento .respuestas{
+	margin: 2rem auto;
+	max-width: 50rem;
+	
+}
+
+section .consentimiento #porqueContenido ul{
+	list-style: none;
+}
+
+section .consentimiento #porqueContenido ul li::before{
+	content: "\2022"; 
+    color: #FF94C0;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+section .consentimiento #porqueContenido table img{
+	width: 100px;
+	height: auto;
+}
+
+section .consentimiento #porqueContenido table{
+	text-align: center;
+}
+
+@media screen and (max-width: 650px){
+	section .consentimiento .consen-titulo{
+  		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px){
+	section .consentimiento .consen-titulo{
+  		font-size: 50px;
+	}
+}
+
+section .consentimiento #paraQueContenido .card-container {
+    perspective: 1000px;
+}
+
+section .consentimiento #paraQueContenido .card-container img {
+    height: 170px;
+    width: auto;
+    padding: 20px;
+}
+
+section .consentimiento #paraQueContenido .card {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section .consentimiento #paraQueContenido .card:hover {
+    transform: rotateY(180deg);
+}
+
+section .consentimiento #paraQueContenido .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+section .consentimiento #paraQueContenido .front {
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+}
+
+section .consentimiento #paraQueContenido .back {
+    background-color: #FF94C0;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: justify;
+    padding: 10px;
+}
+
+
+/*FINAL*/
+
+section .final .video{
+	margin: 0 auto;
+	max-width: 40rem;
+}
